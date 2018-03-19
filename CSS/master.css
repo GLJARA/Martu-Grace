@@ -22,7 +22,6 @@ header {
 
 ul {
 
-
 }
 
 /* Definiciones especificas
@@ -32,14 +31,16 @@ header .main-nav li {
 }
 
 .main-nav ul {
-  background-color: #cebaba;
+  background-color: #b7d1d1;
   position: fixed;
-  top: 14px;
-  left: 5px;
+  top: 5px;
+  left: 15px;
   z-index: 5;
   padding-left: 110px;
   width: 100%;
-  padding: 10px 0 10px 120px;
+  padding: 15px 0 15px 120px;
+  border-top: 10px solid #2f82cc;
+  border-bottom: 10px solid #2f82cc;
 }
 
 .main-nav a {
@@ -51,7 +52,8 @@ header .main-nav li {
   left: 15px;
   top: 7px;
   z-index: 10;
-  border-radius: 100px;
+  border-radius: 5px;
+
 }
 .container {
   max-width: 300px;
@@ -62,7 +64,7 @@ header .main-nav li {
 
 .principal {
   position: absolute;
-  top: 100px;
+  top: 110px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -74,7 +76,7 @@ header .main-nav li {
 .head-login {
   display: flex;
   justify-content: center;
-  background-color: #c6d9ec;
+  background-color: #d2d9d8;
   width: 80%;
   margin-left:  10%;
 }
@@ -122,6 +124,7 @@ header .main-nav li {
 
 footer {
   margin-top: 10px;
+
 }
  .foot-nav ul {
   background-color: #4d4d4d;
@@ -161,6 +164,13 @@ border-radius: 10px;
      justify-content: space-around;
 
    }
+   .main-nav ul {
+    top: 12px;
+    border-top: 8px solid #2f82cc;
+    border-bottom: 8px solid #2f82cc;
+    padding: 10px 0 10px 80px;
+  }
+
  }
  @media (min-width: 801px) {
    .container {
