@@ -19,18 +19,18 @@ header {
   font-size: 0.8em;
 }
 
-
 ul {
-
 }
 
 /* Definiciones especificas
 ----------------------------------------------*/
+/* header - logo - menu - FOR ALL PAGES*/
 header .main-nav li {
     padding-left: 30px;
 }
 
 .main-nav ul {
+/* line for menu header */
   background-color: #b7d1d1;
   position: fixed;
   top: 5px;
@@ -48,14 +48,19 @@ header .main-nav li {
 }
 
 .logo {
+/*logo header */
   position: fixed;
   left: 15px;
   top: 7px;
   z-index: 10;
-  border-radius: 5px;
+  border-radius: 2px;
 
 }
+/*----------------------------------------------*/
+/* principal body */
+/*----------------------------------------------*/
 .container {
+/* general container - all with header */
   max-width: 300px;
   display: flex;
   flex-direction: column;
@@ -63,71 +68,30 @@ header .main-nav li {
 }
 
 .principal {
+/* body without header */
   position: absolute;
   top: 110px;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-
-/* Definiciones de cuerpo login
--------------------------------*/
-
-.head-login {
-  display: flex;
-  justify-content: center;
-  background-color: #d2d9d8;
-  width: 80%;
-  margin-left:  10%;
-}
-
-.img-log {
-  border-radius: 150px;
-  margin: 10px 0 10px 0;
-}
-.login {
-  width: 80%;
-  margin-left:  10%;
-  border: 1px solid #c6d9ec;
-
-}
-.login_fields {
-  width: 60%;
-  margin-top: 30px;
-  margin-left:  20%;
-  display: flex;
-  flex-direction: column;
-}
-
-.login_but {
-  width: 60%;
-  margin-top: 30px;
-  margin-left:  20%;
-  display: flex;
-  justify-content: center;
-}
-
-.login_but .btn-confirm {
-  width: 80%;
-  margin-bottom: 30px;
-}
-.line {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
+/*----------------------------------------------*/
+/* for all input in ALL forms */
+/*----------------------------------------------*/
 .form-control:focus {
   background-color: #ecf2f9;
   border: 1px solid #4080bf;
 }
-
+/* foot of the page */
 footer {
+  position: static;
+  bottom: 5px;
   margin-top: 10px;
 
 }
+/* menu for footer */
  .foot-nav ul {
-  background-color: #4d4d4d;
+  background-color: #5a6161;
   color: white;
   width: 100%;
   padding: 10px 0 10px 120px;
@@ -154,7 +118,59 @@ border-radius: 10px;
   background-color: #3973ac;
   border: 2px solid #e6e6ff;
 }
-/* Responsive */
+/*--------------------------------
+/* Definitions for login PAGE
+-------------------------------*/
+
+/* Header login */
+.head-login {
+  display: flex;
+  justify-content: center;
+  background-color: #d2d9d8;
+  width: 80%;
+  margin-left:  10%;
+}
+
+.img-login {
+  border-radius: 150px;
+  margin: 10px 0 10px 0;
+}
+/* login Body */
+.login {
+  width: 80%;
+  margin-left:  10%;
+  border: 1px solid #c6d9ec;
+
+}
+.login_fields {
+  width: 60%;
+  margin-top: 30px;
+  margin-left:  20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login_but {
+/*-Button--*/
+  width: 60%;
+  margin-top: 30px;
+  margin-left:  20%;
+  display: flex;
+  justify-content: center;
+}
+
+.login_but .btn-confirm {
+  width: 80%;
+  margin-bottom: 30px;
+}
+.line {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+/*--------------------------------
+/* Responsive FOR LOGIN PAGE*/
+/*--------------------------------*/
  @media (min-width: 600px) {
    .container {
      max-width: 800px;
