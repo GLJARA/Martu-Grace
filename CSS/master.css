@@ -8,27 +8,26 @@ body {
   margin: 0;
   padding: 0;
 }
+
 li{
   list-style-type: none;
   display: inline-block;
+}
 
+ul {
+  padding: 0;
 }
 
 header {
   overflow: hidden;
   width: 100%;
   font-size: 0.8em;
-
-}
-
-ul {
 }
 
 /* Definiciones especificas
 ----------------------------------------------*/
 /* header - logo - menu - FOR ALL PAGES*/
 
-}
 header .main-nav li {
     position: relative;
     padding-left: 30px;
@@ -40,7 +39,6 @@ header .main-nav li {
   top: 0px;
   left: 15px;
   z-index: 5;
-  padding-left: 110px;
   width: 100%;
   background-color: #243764;
   padding: 70px 0 24px 120px;
@@ -89,7 +87,9 @@ header .main-nav li {
 }
 /* foot of the page */
 footer {
+  overflow: hidden;
   margin-top: 10px;
+  width: 100%
 
 }
 /* menu for footer */
@@ -189,6 +189,9 @@ border-top: 30px;
   color:#fff;
   width: 100%;
 }
+.nav-foot ul {
+  width: 100%;
+}
 .nav-foot li {
   background-color: #878787;
   padding: 2px 6px 2px 6px;
@@ -214,10 +217,7 @@ border-radius: 110px;
      justify-content: space-between;
 
    }
-   .main-nav ul {
-    top: 12px;
 
-  }
 
  }
  @media (min-width: 801px) {

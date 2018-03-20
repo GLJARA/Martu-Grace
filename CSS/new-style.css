@@ -1,0 +1,47 @@
+/* General definitions */
+* {
+  box-sizing: border-box;
+  font-family: verdana, arial;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  margin:0;
+}
+/* Header*/
+.main-header {
+  background-color: blue;
+
+  /*Flex*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-nav {
+  margin-left: 30px;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.main-nav li {
+  margin-right: 20px;
+  line-height: 80px; /* tiene que ser igual al alto de la imagen*/
+}
+
+.main-nav li a {
+  color: #fff;
+  text-decoration: none;
+}
