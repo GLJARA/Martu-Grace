@@ -15,8 +15,10 @@ li{
 }
 
 header {
+  overflow: hidden;
   width: 100%;
   font-size: 0.8em;
+
 }
 
 ul {
@@ -25,35 +27,38 @@ ul {
 /* Definiciones especificas
 ----------------------------------------------*/
 /* header - logo - menu - FOR ALL PAGES*/
+
+}
 header .main-nav li {
     padding-left: 30px;
 }
 
 .main-nav ul {
 /* line for menu header */
-  background-color: #b7d1d1;
   position: fixed;
-  top: 5px;
+  top: 0px;
   left: 15px;
   z-index: 5;
   padding-left: 110px;
   width: 100%;
-  padding: 15px 0 15px 120px;
-  border-top: 10px solid #2f82cc;
-  border-bottom: 10px solid #2f82cc;
+  background-color: #243764;
+  padding: 70px 0 15px 120px;
 }
 
 .main-nav a {
   text-decoration: none;
+  color: white;
 }
 
 .logo {
 /*logo header */
   position: fixed;
-  left: 15px;
-  top: 7px;
+  left: 30px;
+  top: 30px;
   z-index: 10;
-  border-radius: 2px;
+  border-radius: 10px;
+  border: 5px solid white;
+
 
 }
 /*----------------------------------------------*/
@@ -70,7 +75,7 @@ header .main-nav li {
 .principal {
 /* body without header */
   position: absolute;
-  top: 110px;
+  top: 140px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -91,9 +96,9 @@ footer {
 }
 /* menu for footer */
  .foot-nav ul {
-  background-color: #5a6161;
   color: white;
   width: 100%;
+  background-color: #243764;
   padding: 10px 0 10px 120px;
   }
 
@@ -213,9 +218,7 @@ border-radius: 110px;
    }
    .main-nav ul {
     top: 12px;
-    border-top: 8px solid #2f82cc;
-    border-bottom: 8px solid #2f82cc;
-    padding: 10px 0 10px 80px;
+
   }
 
  }
