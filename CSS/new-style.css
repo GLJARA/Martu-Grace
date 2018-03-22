@@ -118,4 +118,30 @@ ul {
   margin: 0 auto;
 }
 
-.
+/* control for Input data */
+/* esto es lo que marca el color del input */
+.form-control:focus {
+  background-color: #ecf2f9;
+  border: 1px solid #4080bf;
+}
+
+/* Buttons must be in global master !!move */
+.btn-confirm {
+color:#fff;
+background-color:#59aee6;
+border: 2px solid #4c4c79;
+padding: 10px;
+border-top: 30px;
+border-bottom: 30px;
+border-radius: 10px;
+}
+
+.btn-confirm:hover {
+  background-color: #3973ac;
+  border: 2px solid #59aee6 ;
+}
+
+.btn-confirm:focus {
+  background-color: #3973ac;
+  border: 2px solid #e6e6ff;
+}
