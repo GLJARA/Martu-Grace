@@ -1,7 +1,7 @@
 /* General definitions */
 * {
   box-sizing: border-box;
-  font-family: verdana, arial;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -14,7 +14,9 @@
 
 .logo {
   width: 180px;
+  padding-left: 10px;
 }
+
 
 .main-nav:{
   float: right;
@@ -45,7 +47,7 @@
   text-align: center;
   text-decoration-style: solid;
   position: absolute;
-  top: 78%;
+  top: 71 %;
   width: 100%;
   padding: 20px;
 }
@@ -67,10 +69,19 @@
   text-align: center;
   position: absolute;
   width: 100%;
-  top: 55%;
-  padding: 20px;
+  top: 90%;
+  padding: 26px;
 }
-
+.p3 {
+  background-color: rgba(0,0,0,.5);
+  color: white;
+  font-size: 23px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 90%;
+  padding: 40px;
+}
 body {
   margin: 0;
   padding: 0;
@@ -86,28 +97,27 @@ ul {
 }
 /* Header*/
 .main-header {
-  background-color: blue;
+  background-color: #1c1c4f;
 
   /*Flex*/
   display: flex;
   flex-wrap: wrap;
 }
 
-.main-nav {
-  margin-left: 30px;
-}
-
 .main-nav ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  padding-left: 30px;
 }
 
-.main-nav li {
-  margin-right: 20px;
+.main-nav li, .main-nav li .tab-li {
+  margin-right: 30px;
   line-height: 80px; /* tiene que ser igual al alto de la imagen*/
 }
-
+.main-nav .tab-li {
+  padding-left: 200px;
+}
 .main-nav li a {
   color: #fff;
   text-decoration: none;
@@ -128,7 +138,7 @@ ul {
 /* Buttons must be in global master !!move */
 .btn-confirm {
 color:#fff;
-background-color:#59aee6;
+background-color: #6e8d9b;
 border: 2px solid #4c4c79;
 padding: 10px;
 border-top: 30px;
@@ -138,10 +148,24 @@ border-radius: 10px;
 
 .btn-confirm:hover {
   background-color: #3973ac;
-  border: 2px solid #59aee6 ;
+  border: 2px solid ##6e8d9b ;
 }
 
 .btn-confirm:focus {
   background-color: #3973ac;
   border: 2px solid #e6e6ff;
 }
+
+.footer-nav {
+  background-color: #3f3f6a;
+  margin-top: 110px;
+}
+.footer-nav ul {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+}
+.footer-nav li a, .footer-nav li {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 10px;
