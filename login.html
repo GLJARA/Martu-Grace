@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width-device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="../CSS/new-style.css">
-  <link rel="stylesheet" href="../CSS/style-login.css">
-  <title>Sign Up</title>
+  <link rel="stylesheet" href="css/new-style.css">
+  <link rel="stylesheet" href="css/style-login.css">
+  <title>Login</title>
 </head>
 <body>
   <div class="container">
       <header class="main-header">
         <div class="">
-        <img class="logo" src="../IMG/JustPeople2.jpg" alt="">
+        <img class="logo" src="img/JustPeople2.jpg" alt="">
       </div>
         <nav class="main-nav">
           <ul>
@@ -24,30 +24,34 @@
     <div class="principal">
 
       <div class="head-login">
-        <img class="img-login" src="../IMG/Signup.jpg" alt="">
+        <img class="img-login" src="img/login2.jpg" alt="">
       </div>
       <div class="login">
 
         <div class="login_fields">
           <div class="line">
-            <label for="name" class="label">Name: </label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            <label for="username" class="label">User name: </label>
+            <input type="text" class="form-control" id="username" placeholder="Enter an username">
           </div>
           <div class="line">
-            <label for="lname" class="label">Last Name </label>
-            <input type="text" class="form-control" id="lname" placeholder="Enter yor last name">
+            <label for="password" class="label">Password: </label>
+            <input type="password" class="form-control" id="password" placeholder="Enter a password">
           </div>
-
+          <div class="line2">
+            <label for="remember" class="label">Remember me: </label>
+            <input type="checkbox" class="form-control" id="remember" >
+          </div>
         </div>
         <div class="login_but">
-          <button class="btn-confirm" type="button" name="button">Continue</button>
+          <button class="btn-confirm" type="button" name="button">Let me in</button>
         </div>
         <nav class="nav-foot">
           <ul>
             <li>
-              <a href="./login.html">Go to Log In</a>
+              <a href="./singup.html"> Sign Up</a>
             </li>
             <li>
+              <a href="#"> Forgot Password?</a>
             </li>
           </ul>
         </nav>
