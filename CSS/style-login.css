@@ -1,0 +1,132 @@
+
+/*--------------------------------
+/* Definitions for login PAGE
+-------------------------------*/
+
+/* Header login */
+.head-login {
+  display: flex;
+  justify-content: center;
+  background-image: url("../IMG/line_small.jpg");
+  width: 80%;
+  margin-left:  10%;
+  margin-top: 10px;
+  border: 1px solid #c6d9ec;
+}
+
+
+.img-login {
+  border-radius: 150px;
+  margin: 10px 0 10px 0;
+  border: 2px solid #c6d9ec;
+
+}
+/* login Body */
+.login {
+  width: 80%;
+  margin-left:  10%;
+  border: 1px solid #c6d9ec;
+
+}
+.login_fields {
+  width: 60%;
+  margin-top: 30px;
+  margin-left:  20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login_but {
+/*-Button--*/
+  width: 60%;
+  margin-top: 30px;
+  margin-left:  20%;
+  display: flex;
+  justify-content: center;
+}
+
+.login_but .btn-confirm {
+  width: 80%;
+  margin-bottom: 30px;
+}
+.line {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.line2 {
+  margin-top: 10px;
+  display: flex;
+  font-size: 0.5em;
+  justify-content: flex-end;
+
+}
+.nav-foot {
+  color:#fff;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.nav-foot ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #878787;
+
+}
+.nav-foot li {
+  padding: 2px 6px 2px 6px;
+}
+.nav-foot img {
+border-radius: 110px;
+}
+.nav-foot a {
+  font-size: 0.6em;
+  text-decoration: none;
+  color: white;
+  padding 0;
+}
+
+.footer-nav {
+  background-color: #3f3f6a;
+  margin-top: 40px;
+}
+
+/*--------------------------------
+/* Responsive FOR LOGIN PAGE*/
+/*--------------------------------*/
+ @media (min-width: 600px) {
+   .container {
+     max-width: 800px;
+   }
+   .line {
+     flex-direction: row;
+     justify-content: space-between;
+
+   }
+
+     .nav-foot ul {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;}
+
+
+ }
+ @media (min-width: 801px) {
+   .container {
+     max-width: 1024px; }
+     .line {
+       flex-direction: column;
+       justify-content: space-between;
+          }
+          .nav-foot {
+            .nav-foot ul {
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: row;}
+
+ }
