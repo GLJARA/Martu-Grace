@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 body {
@@ -24,9 +25,9 @@ ul {
 .principal{
   position: relative;
 }
-
-/* Cabecera
-======================*/
+/*==========================*/
+/* Headers - logo - Menu
+/*=========================*/
 .main-header {
   background-color: #1c1c4f;
   /*Flex*/
@@ -68,16 +69,43 @@ ul {
   color: #fff;
   text-decoration: none;
 }
-/* Header*/
+/*==========================*/
+/* Banners */
+/*==========================*/
+/* Banner HOME */
+.bannerContainer {
+  position: relative;
+}
 
 .banner {
   width: 100%;
   margin: 0 auto;
 }
-.bannerContainer {
+
+/* Banner Login */
+.bannerContainer2 {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.bannerSmall {
+  width: 100%;
+  margin: 0 auto;
 }
 
+.keylogin {
+  position: absolute;
+  opacity: 0.4;
+  height: 100%;
+}
+/*==========================*/
+/*  FOR EACH PEACH PRINCIPAL CONTAINER
+/*==========================*/
+/* HOME */
+/*-------------------------------*/
 .Fotitoscontainer {
   position: relative;
 }
@@ -134,7 +162,96 @@ ul {
   top: 90%;
   padding: 40px;
 }
+/* Definitions for "login" PAGE
+-------------------------------*/
 
+/* Header login */
+.head-login {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-left:  10%;
+  margin-top: 10px;
+  border: 1px solid #c6d9ec;
+}
+
+
+.img-login {
+  border-radius: 150px;
+  margin: 10px 0 10px 0;
+  border: 2px solid #c6d9ec;
+
+}
+/* login Body */
+.login {
+  width: 80%;
+  margin-left:  10%;
+
+}
+.login_fields {
+  width: 60%;
+  margin-top: 30px;
+  margin-left:  20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login_but {
+/*-Button--*/
+  width: 60%;
+  margin-top: 30px;
+  margin-left:  20%;
+  display: flex;
+  justify-content: center;
+}
+
+.login_but .btn-confirm {
+  width: 80%;
+  margin-bottom: 30px;
+}
+.line {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.line2 {
+  margin-top: 10px;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: flex-end;
+
+}
+.nav-foot {
+  color:#fff;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.nav-foot ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #878787;
+
+}
+.nav-foot li {
+  padding: 2px 6px 2px 6px;
+}
+.nav-foot img {
+border-radius: 110px;
+}
+.nav-foot a {
+  font-size: 0.6em;
+  text-decoration: none;
+  color: white;
+  padding 0;
+}
+
+/*-------------------------*/
 /* control for Input data */
 /* esto es lo que marca el color del input */
 .form-control:focus {
@@ -142,11 +259,11 @@ ul {
   border: 1px solid #4080bf;
 }
 
-/* Buttons must be in global master !!move */
+/* Buttons must be in global */
 .btn-confirm {
-color:#fff;
-background-color: #6e8d9b;
-border: 2px solid #4c4c79;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 204, 102);
+border: 3px solid #737373;
 padding: 10px;
 border-top: 30px;
 border-bottom: 30px;
@@ -154,14 +271,19 @@ border-radius: 10px;
 }
 
 .btn-confirm:hover {
-  background-color: #3973ac;
-  border: 2px solid ##6e8d9b ;
+  background-color: rgb(255, 204, 102);
+  border: 3px solid rgb(255, 197, 63) ;
 }
 
 .btn-confirm:focus {
-  background-color: #3973ac;
-  border: 2px solid #e6e6ff;
+  color: white;
+  background-color: #737373;
+  border: 3px solid rgb(255, 197, 63);
 }
+
+/*-------------------------*/
+/* FOOTER
+/*-------------------------*/
 
 .footer-nav {
   background-color: #3f3f6a;
@@ -176,3 +298,38 @@ flex-direction: row;
   color: #fff;
   text-decoration: none;
   padding-left: 10px;
+}
+/*--------------------------------
+/* Responsive
+/*--------------------------------*/
+@media (min-width: 600px) {
+     .container {
+       max-width: 800px;
+     }
+     .line {
+       flex-direction: row;
+       justify-content: space-between;
+
+     }
+
+       .nav-foot ul {
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row;}
+
+
+   }
+   @media (min-width: 801px) {
+     .container {
+       max-width: 1024px; }
+       .line {
+         flex-direction: column;
+         justify-content: space-between;
+            }
+            .nav-foot {
+              .nav-foot ul {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;}
+
+   }
