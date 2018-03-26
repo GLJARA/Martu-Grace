@@ -250,6 +250,44 @@ border-radius: 110px;
   color: white;
   padding 0;
 }
+/* FAQ Body */
+.principalFaq {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/ladrillos.jpg");
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.boxFaq {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  margin-left: 5%;
+  height: 100%;
+
+}
+
+.imgFaq {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.imgFaq img {
+ width: 50%;
+ border-radius: 100px;}
 
 /*-------------------------*/
 /* control for Input data */
@@ -288,16 +326,22 @@ border-radius: 10px;
 .footer-nav {
   background-color: #3f3f6a;
   margin-top: 110px;
-}
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;}
+
 .footer-nav ul {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-}
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  }
+
 .footer-nav li a, .footer-nav li {
   color: #fff;
   text-decoration: none;
   padding-left: 10px;
+  padding-right: 5px;
 }
 /*--------------------------------
 /* Responsive
@@ -316,7 +360,14 @@ flex-direction: row;
          display: flex;
          flex-wrap: wrap;
          flex-direction: row;}
-
+    .principalFaq {
+      flex-direction: row;
+    }
+    .boxFaq {
+     width: 40%;
+     flex-direction: row;
+     justify-content: center;
+    }
 
    }
    @media (min-width: 801px) {
@@ -333,3 +384,14 @@ flex-direction: row;
                 flex-direction: row;}
 
    }
+   .principalFaq {
+     flex-direction: row;
+    justify-content: center;
+      }
+
+   .boxFaq {
+    width: 40%;
+    flex-direction: row;
+
+   }
+ }
