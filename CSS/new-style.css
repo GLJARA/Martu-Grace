@@ -331,6 +331,10 @@ ul {
       padding: 8px;
     }
 
+    .infFaq li {
+    list-style-type: disc;
+    }
+
     /* FAQ Body */
     .principalFaq {
       margin: 0;
