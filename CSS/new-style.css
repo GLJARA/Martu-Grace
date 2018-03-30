@@ -50,7 +50,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  flex-basis: 80%;
+  flex-basis: 60%;
   justify-content: space-between;
 
 }
@@ -58,7 +58,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  flex-basis: 30%;
+  flex-basis: 50%;
   justify-content: space-around;
 
 }
@@ -138,6 +138,7 @@ ul {
   opacity: 1.5;
   border: 2px solid #e7a43c;
   padding: 10px;
+  font-weight: bold;
 }
 
 .btn-confirm:hover {
@@ -150,6 +151,9 @@ ul {
   color: white;
   background-color: #999999;
   border: 1px solid #e7a43c;
+}
+.label {
+  font-weight: bold;
 }
 /*==========================*/
 /*  FOR EACH PEACH PRINCIPAL CONTAINER
@@ -179,24 +183,18 @@ ul {
     position: relative;
   }
 
-  .linesub2 {
-    border-right: 1px solid white;
-  }
-  .linesub2:nth-child(3) {
-    border-right: 0px;
-  }
-
 
   .p1{
     position: absolute;
     background-color: rgba(0,0,0,.5);
     color: white;
-    font-size: 11px;
+    font-size: 12px;
     text-align: center;
     text-decoration-style: solid;
-    bottom: 1%;
+    bottom: -2px;
     width: 100%;
-    padding: 15px;
+    padding: 3px 5px 5px 2px;
+
   }
 
   .Numbers {
@@ -214,19 +212,13 @@ ul {
 
   .p2{
     color: white;
-    font-size: 23px;
+    font-size: 18px;
     text-align: center;
     width: 100%;
     top: 90%;
-    padding: 24px;
+    padding: 10px;
   }
-  .p3 {
-    color: white;
-    font-size: 23px;
-    text-align: center;
-    width: 100%;
-    padding: 38px;
-  }
+
   /* Definitions for "login" PAGE
   -------------------------------*/
 
@@ -263,19 +255,18 @@ ul {
 
   .login_but , .signup_but {
     /*-Button--*/
-    width: 60%;
+    width: 100%;
     margin-top: 20px;
-    margin-left:  20%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 
   .login_but .btn-confirm {
-    width: 49%;
+    width: 100%;
     margin-bottom: 10px;
-    padding: 8px;
+    padding: 8px 1px 8px 3px;
   }
 
   .line {
@@ -323,11 +314,18 @@ ul {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-start;
+
     }
+  .subgender2 {
+    margin-left: 24px;
+    margin-right: 10px;
+  }
+
     .signup_but .btn-confirm {
       width: 100%;
       margin-bottom: 10px;
+      margin-left:  0;
       padding: 8px;
     }
 
@@ -370,7 +368,7 @@ ul {
       align-items: center;
     }
     .imgFaq img {
-      width: 50%;
+      width: 33%;
       border-radius: 100px;}
 
 
@@ -409,6 +407,20 @@ ul {
           .container {
             max-width: 800px;
           }
+          .main-nav {
+            flex-basis: 80%;}
+          .main-nav ul {
+            flex-basis: 30%;}
+
+          .login_but , .signup_but {
+              /*-Button--*/
+              width: 60%;
+              flex-direction: row;
+              margin-left:  20%;
+            }
+            .login_but .btn-confirm {
+              width: 48%;
+            }
           /* for lOGIN PAGE*/
           .line {
             flex-direction: row;
@@ -418,15 +430,20 @@ ul {
           .linecontainer{
             width: 33.33%;
           }
-          .p1 {
-            font-size: 21px;
-            padding: 15px;
+          .linesub2 {
+            border-right: 1px solid white;
+          }
+
+      .p1 {
+            font-size: 30px;
+            padding: 12px;
+            botton: 0.3%;
           }
           .Fotitoscontainer {
             flex-direction: row;
           }
-          .p3 {
-            padding: 24px;
+          .p2 {
+            font-size: 23px;
           }
 
           /* for FAQ page*/
@@ -460,9 +477,24 @@ ul {
               /*--------------------------------*/
               .container {
               max-width: 100%; }
-              /* for INDEX PAGE*/
+              .main-nav {
+                flex-basis: 80%;}
+                .main-nav ul {
+                  flex-basis: 30%;}
+                .login_but , .signup_but {
+                    /*-Button--*/
+                    width: 60%;
+                    flex-direction: row;
+                  }
+                  .login_but .btn-confirm {
+                    width: 48%;
+                  }
+                /* for INDEX PAGE*/
+              .linesub2 {
+                border-right: 1px solid white;
+              }
               .p1 {
-                font-size: 30px;
+                font-size: 32px;
                 padding: 20px;
               }
               .linecontainer{
