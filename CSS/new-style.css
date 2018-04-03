@@ -23,7 +23,7 @@ ul {
   position: relative;
 }
 .principal{
-  position: relative;
+  min-height: 700px;
 }
 /*==========================*/
 /* Headers - logo - Menu
