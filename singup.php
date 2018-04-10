@@ -12,7 +12,7 @@
   <div class="container">
     <header class="main-header">
       <div class="logo-container">
-        <a href="index.html">
+        <a href="index.php">
           <img class="logo" src="img/JustPeople.jpg" alt="">
         </a>
       </div>

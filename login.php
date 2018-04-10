@@ -12,17 +12,17 @@
   <div class="container">
     <header class="main-header">
       <div class="logo-container">
-        <a href="index.html">
+        <a href="index.php">
         <img class="logo" src="img/JustPeople.jpg" alt="">
         </a>
       </div>
       <nav class="main-nav">
         <ul>
-          <li> <a href="./faq.html">FAQ</a></li>
+          <li> <a href="./faq.php">FAQ</a></li>
         </ul>
         <ul>
-          <li> <a href="./login.html">Log In</a></li>
-          <li> <a href="./singup.html">Sign Up</a></li>
+          <li> <a href="./login.php">Log In</a></li>
+          <li> <a href="./singup.php">Sign Up</a></li>
         </ul>
       </nav>
       <div class="title">
