@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -12,7 +13,7 @@
   <div class="container">
     <?php require './PHP/partials/header.php' ?>
     <div class="principal">
-      <form class="signup" action="../TI/PHP/signup.controller.php" enctype="multipart/form-data" method="post">
+      <form class="signup" action="../TI/PHP/controllers/signup.controller.php" enctype="multipart/form-data" method="post">
         <div class="group">
           <div class="subgroup">
             <label for="name" class="label">Full Name: </label>
@@ -27,7 +28,12 @@
         </div>
         <div class="subgroup">
           <label for='email' class="label" >Email *:</label>
-          <input type='email' class="form-control" name='email' id='email' value='' maxlength="50" />
+          <?php if (isset($_SESSION['email'])): ?>
+            <input type='email' class="form-control" name='email' id='email' value='<?php echo $_SESSION['email']; ?>' maxlength="50" />
+            <p> <?php echo $_SESSION['errorEmail'] ?></p>
+          <?php else: ?>
+            <input type='email' class="form-control" name='email' id='email' value='' maxlength="50" />
+          <?php endif; ?>
           <br/>
         </div>
       </div>
