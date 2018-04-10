@@ -10,25 +10,7 @@
 </head>
 <body>
   <div class="container">
-    <header class="main-header">
-      <div class="logo-container">
-        <a href="index.php">
-        <img class="logo" src="img/JustPeople.jpg" alt="">
-        </a>
-      </div>
-      <nav class="main-nav">
-        <ul>
-          <li> <a href="./faq.php">FAQ</a></li>
-        </ul>
-        <ul>
-          <li> <a href="./login.php">Log In</a></li>
-          <li> <a href="./singup.php">Sign Up</a></li>
-        </ul>
-      </nav>
-      <div class="title">
-        <h1>Log In</h1>
-      </div>
-      </header>
+    <?php require './PHP/partials/header.php' ?>
     <div class="principal">
       <div class="bannerContainer2">
         <img class="bannerSmall" src="./img/BannerSmall.jpg" alt="">
@@ -55,40 +37,7 @@
         </div>
       </form>
     </div>
-    <footer>
-      <nav class="footer-nav">
-        <ul>
-          <li>© Copyright 2018<li>
-        </ul>
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/">
-              <i class="fab fa-facebook"> </i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/">
-             <i class="fab fa-twitter-square"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.google.com.ar">
-              <i class="fab fa-google-plus-square"></i>
-            </a>
-          </li>
-          </ul>
-        </nav>
-        </footer>
+    <?php require './PHP/partials/footer.php' ?>
     </div>
   </div>
 </body>
