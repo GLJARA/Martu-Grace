@@ -18,11 +18,11 @@
       </div>
       <nav class="main-nav">
         <ul>
-          <li> <a href="./faq.html">FAQ</a></li>
+          <li> <a href="./faq.php">FAQ</a></li>
         </ul>
         <ul>
-          <li> <a href="./login.html">Log In</a></li>
-          <li> <a href="./singup.html">Sign Up</a></li>
+          <li> <a href="./login.php">Log In</a></li>
+          <li> <a href="./singup.php">Sign Up</a></li>
         </ul>
       </nav>
       <div class="title">
@@ -30,21 +30,11 @@
       </div>
     </header>
     <div class="principal">
-      <form class="signup">
+      <form class="signup" action="../TI/PHP/signup.controller.php" enctype="multipart/form-data" method="post">
         <div class="group">
           <div class="subgroup">
-            <label for="name" class="label">Name: </label>
-            <input type="text" class="form-control" id="name" >
-            <br>
-          </div>
-          <div class="subgroup2">
-            <label for="lname" class="label">Last Name </label>
-            <input type="text" class="form-control" id="lname" >
-            <br>
-          </div>
-          <div class="subgroup">
-            <label for='age' class="label" >Age: </label>
-            <input type='number' class="form-control" name='age' id='age' value='' maxlength="50" />
+            <label for="name" class="label">Full Name: </label>
+            <input type="text" class="form-control" id="name" name="name">
             <br>
           </div>
           <div class="subgender">
@@ -60,11 +50,6 @@
         </div>
       </div>
       <div class="group">
-        <div class="subgroup">
-          <label for='username' class="label" >User Name *:</label>
-          <input type='text' class="form-control" name='username' id='username' value='' maxlength="50" />
-          <br>
-        </div>
         <div class="subgroup2">
           <label for='password' class="label" >Password *:</label>
           <input type='password' class="form-control" name='password' id='password' maxlength="50" />
@@ -75,7 +60,7 @@
       </div>
 
       <div class="signup_but">
-        <button class="btn-confirm" type="button" name="button">Continue</button>
+        <button class="btn-confirm" type="submit" name="button">Continue</button>
       </div>
     </form>
     </div>
