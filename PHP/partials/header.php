@@ -6,14 +6,15 @@
   </div>
   <nav class="main-nav">
     <ul>
-      <li> <a href="./faq.php">FAQ</a></li>
+      <li> <a href="./faq.php?page=FAQ">FAQ</a></li>
     </ul>
     <ul>
-      <li> <a href="./login.php">Log In</a></li>
-      <li> <a href="./singup.php">Sign Up</a></li>
+      <li> <a href="./login.php?page=LOGIN">Log In</a></li>
+      <li> <a href="./singup.php?page=SIGNUP">Sign Up</a></li>
     </ul>
   </nav>
   <div class="title">
-    <h1>FAQ</h1>
+    <?php if (isset($_GET['page'])) {
+      echo "<h1>".$_GET['page']."</h1>"; } ?>
   </div>
 </header>

@@ -25,6 +25,11 @@ ul {
 .principal{
   min-height: 700px;
 }
+/*Usar esta clase para los mensajes error*/
+.error{
+  background-color: red;
+  color: white;
+}
 /*==========================*/
 /* Headers - logo - Menu
 /*=========================*/
