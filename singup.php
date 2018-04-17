@@ -17,39 +17,37 @@ $location = 'Location: ' . $localBase . 'PHP/controllers/signup.controller.php';
     <div class="principal">
       <?php
       $msgError = 0; //seteo variable de error
-      if (isset($_POST['signup'])) {
+      if (isset($_POST['signup'])) { //cada vez que apreto el boton valido
         // si se pulso el boton de signup entonces valida
         require '../TI/PHP/controllers/signup_validation.php';
         if ($msgError == 0 ) { // si no hay erorres se va
-// antees de  salir hay que revisaar todas  validaciones
+// antes de  salir hay que revisaar todas  validaciones
 //          header($location); //location la arma arriba y sale al controller
         }
       };
       ?>
       <form class="signup" action=" " enctype="multipart/form-data" method="post">
         <div class="group">
-          <div class="subgroup">
+          <fieldset class="subgroup">
             <label for="name" class="label">Full Name: </label>
-            <input type="text" class="form-control" id="name" name="name">
+            <input type="text" class="form-control" id="name" name="name" min:"80" max="80">
             <br>
-          </div>
-        <div class="subgroup2">
-          <label for="email" class="label" >Email *:</label>
-          <input type="email" class="form-control" name="email" id="email" value="<?php echo $valor = (isset($_POST['email'])) ? $_POST['email'] : '' ; ?>">
-          <?php if ($msgError == 1): ?>
+            <label for="email" class="label" >Email *:</label>
+            <input type="email" class="form-control" name="email" id="email" value="<?php echo $valor = (isset($_POST['email'])) ? $_POST['email'] : '' ; ?>">
+            <?php if ($msgError == 1): ?>
             <p class="error" > <?php echo $error[$msgError]; ?></p>
           <?php endif ; ?>
           <br/>
-        </div>
+        </fieldset>
       </div>
       <div class="group">
-        <div class="subgroup2">
+        <fieldset class="subgroup">
           <label for="password" class="label" >Password *:</label>
           <input type="password" class="form-control" name="password" id="password">
           <br>
           <label for="passConf" class="label" >Confirm Password *:</label><br/>
           <input type="password"  class="form-control" name="passConf" id="passConf" >
-        </div>
+        </fieldset>
       </div>
       <div class="signup_but">
         <button class="btn-confirm" type="submit" name="signup">Sign Up</button>

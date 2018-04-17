@@ -19,12 +19,12 @@
       <form class="login">
         <div class="login_fields">
           <div class="line">
-            <label for="username" class="label">User name: </label>
-            <input type="text" class="form-control" id="username" placeholder="Enter an username">
+            <label  for="email" class="label" class="f-login">Email: </label>
+            <input type="text" class="form-control" class="f-login" id="email" placeholder="Enter your email" name="email">
           </div>
           <div class="line">
-            <label for="password" class="label">Password: </label>
-            <input type="password" class="form-control" id="password" placeholder="Enter a password">
+            <label for="password" class="label" class="f-login">Password: </label>
+            <input type="password" class="form-control" class="f-login" id="password" placeholder="Enter your password" name="password">
           </div>
           <div class="line2">
             <label for="remember" class="label"><p class="p4">Remember me: </a></label>
